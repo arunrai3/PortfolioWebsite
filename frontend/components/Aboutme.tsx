@@ -17,7 +17,7 @@ const About = () => {
 
     return (
         <div className="min-h-screen w-full bg-slate-950 flex flex-col items-center justify-center pt-12">
-            <div className="grid grid-cols-2 gap-6 p-4 lg:p-12 bg-slate-950 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 lg:p-12 bg-slate-950 w-full">
                 <div className="bg-slate-950 rounded-xl p-4 flex flex-col justify-center items-center">
                     <Image src={FullSizePortrait} alt="Portrait" width={500} height={300} className="rounded-xl" />
                 </div>

@@ -6,6 +6,7 @@ import * as THREE from "three";
 import { useEffect, useRef, useState } from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import { Link as ScrollLink } from 'react-scroll'; // react-scroll Link
 export default function Landing() {
 	const [vantaEffect, setVantaEffect] = useState(0);
 	const vantaRef = useRef(null);
@@ -66,28 +67,22 @@ export default function Landing() {
 						</p>
 					</Link>
 				</div>
+				
 				<div>
-				<a
-					href='https://google.com'
-					target='_blank' //
-					download='arunrairesume.pdf'>
-					<button className='tracking-wider border-blue-800 border-2 rounded-lg font-medium text-white px-4 py-2 mt-4 text-sm md:text-lg lg:text-xl transition-all duration-300 ease-in-out bg-blue-800 hover:bg-blue-800 focus:outline-none focus:ring focus:border-blue-900'>
-						About Me
-					</button>
-					
-				</a>
-				</div>
-				<div>
-				<a
-					href='https://google.com'
-					target='_blank' //
-					download='arunrairesume.pdf'>
-					<button className='tracking-wider border-blue-800 border-2 rounded-lg font-medium text-white px-4 py-2 mt-4 text-sm md:text-lg lg:text-xl transition-all duration-300 ease-in-out bg-blue-800 hover:bg-blue-800 focus:outline-none focus:ring focus:border-blue-900'>
-						Projects
-					</button>
-					
-				</a>
-				</div>
+                    <ScrollLink to="about" smooth={true} duration={500}>
+                        <button className='tracking-wider border-blue-800 border-2 rounded-lg font-medium text-white px-4 py-2 mt-4 text-sm md:text-lg lg:text-xl transition-all duration-300 ease-in-out bg-blue-800 hover:bg-blue-800 focus:outline-none focus:ring focus:border-blue-900'>
+                            About Me
+                        </button>
+                    </ScrollLink>
+                </div>
+                <div>
+                    <ScrollLink to="projects" smooth={true} duration={500}>
+                        <button className='tracking-wider border-blue-800 border-2 rounded-lg font-medium text-white px-4 py-2 mt-4 text-sm md:text-lg lg:text-xl transition-all duration-300 ease-in-out bg-blue-800 hover:bg-blue-800 focus:outline-none focus:ring focus:border-blue-900'>
+                            Projects
+                        </button>
+                    </ScrollLink>
+                </div>
+				
 				<div>
 				<a
 					href='https://google.com'
@@ -99,17 +94,7 @@ export default function Landing() {
 					
 				</a>
 				</div>
-				<div>
-				<a
-					href='https://google.com'
-					target='_blank' //
-					download='arunrairesume.pdf'>
-					<button className='tracking-wider border-blue-800 border-2 rounded-lg font-medium text-white px-4 py-2 mt-4 text-sm md:text-lg lg:text-xl transition-all duration-300 ease-in-out bg-blue-800 hover:bg-blue-800 focus:outline-none focus:ring focus:border-blue-900'>
-						Contact
-					</button>
-					
-				</a>
-				</div>
+
 
 			</div>
 		</div>
