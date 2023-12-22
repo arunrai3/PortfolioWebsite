@@ -27,7 +27,7 @@ const About = () => {
                     <div className="mt-4">
                         <h1 className="tracking-wider text-white text-4xl font-bold mb-2">About Me</h1>
                         <p className="tracking-wider text-gray-300 font-light mb-4">
-                        I am a computer science graduate from Roseville, California, with a passion for developing innovative projects and a constant enthusiasm for learning in the ever-evolving field of computer science. Beyond the realm of coding, I have a background in playing basketball, which instilled in me the values of teamwork and perseverance. When I'm not immersed in the world of technology, I enjoy spending quality time with friends, exploring new places, and embracing the joy that comes with creating lasting memories together.
+                        I am a computer science graduate from Roseville, California, with a passion for developing innovative projects and a constant enthusiasm for learning in the ever-evolving field of computer science. Beyond the realm of coding, I have a background in playing basketball, which instilled in me the values of teamwork and perseverance. When I&apos;m not immersed in the world of technology, I enjoy spending quality time with friends, exploring new places, and embracing the joy that comes with creating lasting memories together.
                         </p>
                     </div>
                     <div className="slider-section">
