@@ -6,12 +6,22 @@ import * as THREE from "three";
 import { useEffect, useRef, useState } from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
-import { Link as ScrollLink } from 'react-scroll'; // react-scroll Link
+import { Link as ScrollLink } from 'react-scroll';
 export default function Landing() {
 	const [vantaEffect, setVantaEffect] = useState(0);
 	const vantaRef = useRef(null);
 
 	useEffect(() => {
+		
+		const originalConsoleWarn = console.warn;
+		console.warn = function(message, ...args) {
+			if (message.startsWith('THREE.Material: parameter')) {
+				return;
+			}
+			originalConsoleWarn(message, ...args);
+		};
+
+
 		if (!vantaEffect) {
 			setVantaEffect(
 				GLOBE({

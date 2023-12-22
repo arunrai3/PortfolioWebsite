@@ -1,25 +1,17 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 
 const About = () => {
     const [sliderTransform, setSliderTransform] = useState('translateX(0)');
 
-    useEffect(() => {
-        // Additional setup if required
-    }, []);
-
-    const handleNavigationClick = (translateValue: string) => {
-        setSliderTransform(translateValue);
-    };
-
     return (
         <div className="min-h-screen w-full bg-slate-950 flex flex-col items-center justify-center pt-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 lg:p-12 bg-slate-950 w-full">
                 <div className="bg-slate-950 rounded-xl p-4 flex flex-col justify-center items-center">
-                    <Image src="/images/full_size_portrait.jpg" alt="Portrait" width={500} height={300} className="rounded-xl" />
+                    <Image src="/images/full_size_portrait.jpg" alt="Portrait" width={500} height={625} className="rounded-xl" />
                 </div>
 
                 <div className="bg-slate-950 rounded-xl p-4 flex flex-col justify-start">
