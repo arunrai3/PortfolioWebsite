@@ -63,6 +63,17 @@ const projects = [
 		isDeveloping: false,
 		isCompleted: true,		
 	},
+	{
+		title: "Appointment Manager",
+		stack: "Java | MySQL",
+		description: "This project helps users manage appointments through a JavaFX-based dashboard, coupled with MySQL database integration for improved data handling.",
+		githubLink: "https://github.com/arunrai3/AppointmentManager",
+		ProjectLink: "https://google.com",
+		isLive: false,
+		isDeveloping: false,
+		isCompleted: true,		
+	},
+
 ];
 
 const Project: React.FC = () => {

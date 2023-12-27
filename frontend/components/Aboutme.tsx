@@ -22,7 +22,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className="slider-section">
-                        <h2 className="text-white text-2xl font-bold">Education</h2>
+                        <h2 className="text-white text-2xl font-bold">Education</h2>                        
                         <p className="text-gray-300 mb-2"><strong>B.S Computer Science |</strong> Western Governors University | Salt Lake City, UT | 2020-2023</p>
                     </div>
                     <div className="slider-section">
@@ -48,7 +48,7 @@ const About = () => {
                         <p className="text-gray-300 mb-2">I developed a project and research paper that earned a Capstone Excellence Award during my final year of university. The project comprises an algorithm with a command-line interface, offering quantitative stock analysis and a machine learning model for predicting whether the selected stock will close green or red the next day. In addition to outlining the practical application of this technology for financial institutions, the research paper delves into the models performance in relation to stocks with higher volatility, discovering its enhanced effectiveness on data with a smaller standard deviation.</p>
                         <div className='mt-4 flex space-x-4'>
                             <a
-                                href="https://google.com"
+                                href="https://github.com/arunrai3/StockMarketPredicitionModel"
                                 target='_blank'
                                 rel='noopener noreferrer'
                                 className='tracking-wider bg-blue-700 text-white py-1 px-2 rounded-md text-sm transition duration-300 hover:bg-blue-600'>
