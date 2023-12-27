@@ -23,7 +23,7 @@ const projects = [
 	},
 	{
 		title: "Portfolio Website",
-		stack: "Next JS | Tailwind CSS",
+		stack: "TypeScript | Next JS | Tailwind CSS",
 		description: "A personal portfolio website showcasing my skills and projects, utilizing cutting-edge technologies like vanta.js for interactive backgrounds, Next.js for server-side rendering, and Tailwind CSS for responsive design.",
 		githubLink: "https://github.com/arunrai3/PortfolioWebsite",
 		ProjectLink: "https://arunraiportfolio.com",

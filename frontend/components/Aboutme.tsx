@@ -55,9 +55,9 @@ const About = () => {
                                 GitHub
                             </a>
                             <a
-                                href="https://google.com"
-                                target='_blank'
-                                rel='noopener noreferrer'
+			                    href='https://drive.google.com/file/d/13N0kU9lxzM0uX3DMtqnQCxMYV57Ez3bV/view?usp=sharing'
+			                    target='_blank'
+			                    rel='noopener noreferrer'
                                 className='tracking-wider border-blue-800 border-2 text-white py-1 px-2 rounded-md text-sm transition duration-300 hover:bg-blue-600 hover:border-blue-800'>
                                 View Paper
                             </a>
