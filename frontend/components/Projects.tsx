@@ -34,7 +34,7 @@ const projects = [
 
 	{
 		title: "Path Finder Pro",
-		stack: "Python | Django | React | PostgreSQL | HTML | CSS | Javascript",
+		stack: "Python",
 		description: "Developed an application for optimal pathfinding, integrating Dijkstra's, Greedy, and Nearest Neighbor algorithms with custom data structures like hash tables to enhance efficiency in terms of time and space.",
 		githubLink: "https://github.com/arunrai3/PathFinderPro",
 		ProjectLink: "https://google.com",
@@ -44,7 +44,7 @@ const projects = [
 	},
 	{
 		title: "Stock Market Prediction Model",
-		stack: "Python | sickit-learn | MySQL | Flask | React | Bootstrap",
+		stack: "Python | Yahoo finance API | NumPy | Pandas",
 		description: "Implemented machine learning models using scikit-learn and TensorFlow, achieving over 60% prediction accuracy on AAPL stock from January to August 2023. Included detailed quantitative metrics for comprehensive data analysis.",
 		githubLink: "https://github.com/arunrai3/StockMarketPredicitionModel",
 		ProjectLink: "https://google.com",
@@ -55,7 +55,7 @@ const projects = [
 
 	{
 		title: "Technology Career Chatbot",
-		stack: "Python | OpenAI API | Flask | Vue.js | Bootstrap",
+		stack: "Python | OpenAI API",
 		description: "Built an interactive chatbot using NLTK Libraries and integrated OpenAI API, designed to guide users in exploring technology career paths and provide personalized, real-time career resources.",
 		githubLink: "https://github.com/arunrai3/TechCareerChatbot",
 		ProjectLink: "https://google.com",
