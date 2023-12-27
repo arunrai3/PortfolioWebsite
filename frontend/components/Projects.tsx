@@ -133,10 +133,7 @@ const ProjectCard: React.FC<{
             <p className='text-green-500 text-md font-bold uppercase'>Completed (Local)</p>
           </div>
         )}
-
-
-
-
+		<br></br>
 		<div className="flex flex-col justify-center h-full">
 		  <h3 className='tracking-wider text-white text-3xl font-bold mb-2'>
 			{title}
