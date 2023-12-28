@@ -2,16 +2,6 @@ import React from "react";
 
 const projects = [
 	{
-		title: "New Stock City",
-		stack: "Python | Flask | React | MySQL | Tailwind CSS",
-		description: "An advanced service for active traders, offering an interactive chatroom for strategy discussions. As well as a comprehensive charting platform with an AI assistant for backtesting and deploying live market strategies.",
-		githubLink: "https://github.com/arunrai3",
-		ProjectLink: "https://newstockcity.com",
-		isLive: false,
-		isDeveloping: true,
-		isCompleted: false,
-	},
-	{
 		title: "Global Capital Quiz",
 		stack: "Java | Springboot | Mondodb | React | Tailwind CSS",
 		description: "A dynamic website for testing geographical knowledge with multiple-choice quizzes on states and countries. Features include time tracking, user accounts for progress tracking, and a leaderboard for competitive learning.",
@@ -21,6 +11,18 @@ const projects = [
 		isDeveloping: true,
 		isCompleted: false,		
 	},
+
+	{
+		title: "New Stock City",
+		stack: "Python | Flask | React | MySQL | Tailwind CSS",
+		description: "An advanced service for active traders, offering an interactive chatroom for strategy discussions. As well as a comprehensive charting platform that provides tools backtesting and deploying live market strategies.",
+		githubLink: "https://github.com/arunrai3",
+		ProjectLink: "https://newstockcity.com",
+		isLive: false,
+		isDeveloping: true,
+		isCompleted: false,
+	},
+
 	{
 		title: "Portfolio Website",
 		stack: "TypeScript | Next JS | Tailwind CSS",

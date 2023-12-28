@@ -19,7 +19,7 @@
     "slick-carousel": "^1.8.1",
     "swiper": "^11.0.5",
     "swiper-react": "^1.0.0",
-    "three": "^0.159.0",
+    "three": "^0.121.0",
     "vanta": "^0.5.24"
   },
   "devDependencies": {
