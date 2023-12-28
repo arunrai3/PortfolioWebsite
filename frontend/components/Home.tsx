@@ -49,7 +49,7 @@ export default function Landing() {
 					Arun Rai
 				</h1>
 				<h2 className='tracking-wider text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl mt-4 font-semilight'>
-					Software Engineer | Northern California
+					Software Engineer | San Francisco, CA
 				</h2>
 				<div className='flex space-x-6 my-4'>
 					<Link

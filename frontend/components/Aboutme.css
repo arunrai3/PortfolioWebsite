@@ -1,0 +1,41 @@
+.underline-effect span, .underline-effect-always span {
+    position: relative;
+    display: inline-block; 
+}
+
+.underline-effect span::after, .underline-effect-always span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px; 
+    left: 0;
+    background-color: rgb(255, 255, 255); 
+    transform-origin: bottom left;
+    transition: transform 0.2s ease-out;
+}
+
+.underline-effect span::after {
+    transform: scaleX(0);
+}
+
+.underline-effect:hover span::after, .underline-effect-always::after {
+    transform: scaleX(1);
+}
+
+.underline-effect-always span::after {
+    transform: scaleX(1); 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}

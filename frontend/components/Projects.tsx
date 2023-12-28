@@ -4,7 +4,7 @@ const projects = [
 	{
 		title: "New Stock City",
 		stack: "Python | Flask | React | MySQL | Tailwind CSS",
-		description: "An advanced service for active traders, offering AI-driven trade alerts, an interactive chatroom for strategy discussions, and a comprehensive charting platform for backtesting and deploying live market strategies.",
+		description: "An advanced service for active traders, offering an interactive chatroom for strategy discussions. As well as a comprehensive charting platform with an AI assistant for backtesting and deploying live market strategies.",
 		githubLink: "https://github.com/arunrai3",
 		ProjectLink: "https://newstockcity.com",
 		isLive: false,
