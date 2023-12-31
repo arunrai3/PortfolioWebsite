@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex items-center">
         <FaEnvelope className="ml-2 md:ml-4" /> &nbsp;
-          <span className="inline-block tracking-wider"> arunrai202@gmail.com</span>
+          <span className="inline-block tracking-wider"> arai12@wgu.edu</span>
           
         </div>
         <div className="flex items-center">
