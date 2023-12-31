@@ -7,7 +7,7 @@ import './Aboutme.css';
 
 const About = () => {
 
-    const [activeTab, setActiveTab] = useState<string>('skills');
+    const [activeTab, setActiveTab] = useState<string>('awards');
     
     
     const handleEducationClick = () => {
@@ -38,23 +38,20 @@ const About = () => {
                     <div className="mt-4">
                         <h1 className="tracking-wider text-white text-4xl font-bold mb-2">About Me</h1>
                         <p className="tracking-wider text-gray-300 font-light mb-4">
-                        I am a computer science graduate from San Francisco, California, with a passion for developing innovative projects and a constant enthusiasm for learning in the ever-evolving field of computer science. Beyond technology, I have a background in playing basketball, which instilled in me the values of teamwork and perseverance. When I&apos;m not immersed in the world of technology, I enjoy spending quality time with friends, exploring new places, and embracing the joy that comes with creating lasting memories together.
+                        I am a recent computer science graduate from San Francisco, California, with a passion for developing innovative projects and a constant enthusiasm for learning in the ever-evolving field of computer science. Actively seeking my first professional role, I am eager to apply my skills in a dynamic workplace, aiming to contribute significantly while continuing to grow and learn. Beyond technology, I have a background in playing basketball, which instilled in me the values of teamwork and perseverance. When I&apos;m not immersed in the world of technology, I enjoy spending quality time with friends, exploring new places, and embracing the joy that comes with creating lasting memories together.
                         </p>
                     </div>
                     <div className="slider-section">
                        <div className="grid grid-cols-2 gap-4 lg:flex lg:space-between">
+
+                           <h2 className={`text-white text-2xl font-bold cursor-pointer  ${activeTab === 'awards' ? 'underline-effect-always' : 'underline-effect'}`} onClick={handleAwardsClick}>
+                            <span>Awards</span>
+                            </h2>
+
                             <h2 className={`text-white text-2xl font-bold cursor-pointer  ${activeTab === 'skills' ? 'underline-effect-always' : 'underline-effect'}`} onClick={handleSkillsClick}>
                             <span>Skills</span>
                             </h2>
 
-
-                            <h2 className={`text-white text-2xl font-bold cursor-pointer  ${activeTab === 'experience' ? 'underline-effect-always' : 'underline-effect'}`} onClick={handleExperienceClick}>
-                            <span>Experience</span>
-                            </h2>
-
-                            <h2 className={`text-white text-2xl font-bold cursor-pointer  ${activeTab === 'awards' ? 'underline-effect-always' : 'underline-effect'}`} onClick={handleAwardsClick}>
-                            <span>Awards</span>
-                            </h2>
                             <h2 className={`text-white text-2xl font-bold cursor-pointer  ${activeTab === 'education' ? 'underline-effect-always' : 'underline-effect'}`} onClick={handleEducationClick}>
                             <span>Education</span>
                             </h2>
@@ -69,12 +66,7 @@ const About = () => {
                     </div>
                     )}
 
-                    {activeTab === 'experience' && (
-                    <div className="fade-in pt-4">
-                        <p className="text-gray-300 mb-0"><strong>Upwork | Software Developer | 05/2022-09/2022</strong></p>
-                        <p className="text-gray-300 mb-2">During my second year of college I took up a project for a client that wanted to switch from manual trading which specifcally relied on the sentiment of the trading community to automated trading. I accomplished this by automating the transformation of English Discord messages into trade tickets through the use of Python NLTK, while also conducting web scraping using Selenium from social media platforms and performing sentiment analysis on the gathered data. Additionally, I implemented robust version control practices using Git, conducted thorough unit testing, and carried out regression testing to ensure the reliability and quality of our software. Moreover, I prioritized security measures to safeguard our systems and data. As a result of these efforts, I enabled the client to achieve remarkable efficiency gains, saving 6 hours each day, while also eliminating trade misses.</p>
-                    </div>
-                    )}
+
 
                     {activeTab === 'skills' && (
                     <div className="fade-in pt-4">
