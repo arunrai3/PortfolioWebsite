@@ -35,6 +35,17 @@ const projects = [
 	},
 
 	{
+		title: "Automate Investing",
+		stack: "Python | Twilio | TD Ameritrade API",
+		description: "This Python application streamlines investment by automatically buying one share daily from a user-selected stock list, employing the dollar cost averaging strategy to mitigate market volatility. Includes text notifications everytime a trade is made.",
+		githubLink: "https://github.com/arunrai3/Automate Investing",
+		ProjectLink: "https://google.com",
+		isLive: false,
+		isDeveloping: false,
+		isCompleted: true,		
+	},
+
+	{
 		title: "Path Finder Pro",
 		stack: "Python",
 		description: "Developed an application for optimal pathfinding, integrating Dijkstra's, Greedy, and Nearest Neighbor algorithms with custom data structures like hash tables to enhance efficiency in terms of time and space.",
