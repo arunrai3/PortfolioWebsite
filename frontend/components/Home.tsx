@@ -95,7 +95,7 @@ export default function Landing() {
 				
 				<div>
 				<a
-			        href='https://drive.google.com/file/d/1QMQLAQu5nhcqRcwWBT-UEVInlQ3NT3d2/view?usp=sharing'
+			        href='https://drive.google.com/file/d/1uiGtCJGGrexd87Q3Niaz7qzLuIXPuBoa/view?usp=sharing'
 			        target='_blank'
 			        rel='noopener noreferrer'>
 					<button className='tracking-wider border-blue-800 border-2 rounded-lg font-medium text-white px-4 py-2 mt-4 text-sm md:text-lg lg:text-xl transition-all duration-300 ease-in-out bg-blue-800 hover:bg-blue-800 focus:outline-none focus:ring focus:border-blue-900'>
