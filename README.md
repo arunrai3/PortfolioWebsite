@@ -30,7 +30,11 @@ To get this project up and running on your local machine, follow these steps:
    ```bash
    npm install
 
-4. **Open the Project:**  
+4. **Run the Development Server:**  
+   ```bash
+   npm run dev
+
+5. **Open the Project:**  
    Finally, open http://localhost:3000 in your browser to view the project. You can start making the project fir your needs by editing the files in the components folder.
 
 
