@@ -1,7 +1,7 @@
 // Footer.tsx
 
 import React from 'react';
-import { FaEnvelope } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin } from 'react-icons/fa';
 import { FaPhone } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
@@ -16,11 +16,16 @@ const Footer: React.FC = () => {
           <span className="inline-block tracking-wider"> arai12@wgu.edu</span>
           
         </div>
-        <div className="flex items-center">
-        <FaPhone className="ml-2 md:ml-4" /> &nbsp;
-          <span className="inline-block tracking-wider"> +1 530-713-4629</span>
-          
-        </div>
+        <a href="https://www.linkedin.com/in/arunrai32" target="_blank" rel="noopener noreferrer">
+          <div className="flex items-center">
+              <FaLinkedin className="ml-2 md:ml-4" /> &nbsp;
+              <span className="inline-block tracking-wider">arunrai32</span>
+          </div>
+        </a>
+
+
+
+
       </div>
     </footer>
   );
