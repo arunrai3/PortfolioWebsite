@@ -61,14 +61,6 @@ export default function Landing() {
 						</p>
 					</Link>
 					<Link
-						href='https://twitter.com/arunrai32'
-						target='_blank'
-						passHref>
-						<p rel='noopener noreferrer'>
-							<BsTwitterX />
-						</p>
-					</Link>
-					<Link
 						href='https://www.linkedin.com/in/arunrai32/'
 						target='_blank'
 						passHref>
