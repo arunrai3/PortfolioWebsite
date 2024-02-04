@@ -1,7 +1,7 @@
 # PortfolioWebsite
 Welcome to my personal portfolio website! This project uses Next.js, TypeScript, and Tailwind CSS. The website is enriched with interactive 3D effects powered by three.js and vanta.js, ensuring a captivating user experience.
 
-Link to Live version: https://wwww.arunraiportfolio.com
+Link to Live version: https://www.arunraiportfolio.com
 
 
 ## Features
