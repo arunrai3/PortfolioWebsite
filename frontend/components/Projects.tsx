@@ -30,7 +30,7 @@ const projects = [
 		title: "Automate Investing",
 		stack: "Python | Twilio | TD Ameritrade API",
 		description: "This Python application streamlines investment by automatically buying one share daily from a user-selected stock list, employing the dollar cost averaging strategy to mitigate market volatility. Includes text notifications everytime a trade is made.",
-		githubLink: "https://github.com/arunrai3/Automate Investing",
+		githubLink: "https://github.com/arunrai3/AutomateInvesting",
 		ProjectLink: "https://google.com",
 		isLive: false,
 		isDeveloping: false,
