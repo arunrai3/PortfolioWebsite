@@ -1,16 +1,6 @@
 import React from "react";
 
 const projects = [
-	{
-		title: "Global Capital Quiz",
-		stack: "Java | Springboot | Mondodb | React | Tailwind CSS",
-		description: "A dynamic website for testing geographical knowledge with multiple-choice quizzes on states and countries. Features include time tracking, user accounts for progress tracking, and a leaderboard for competitive learning.",
-		githubLink: "https://github.com/arunrai3/USACapitalQuiz",
-		ProjectLink: "https://google.com",
-		isLive: false,
-		isDeveloping: true,
-		isCompleted: false,		
-	},
 
 	{
 		title: "New Stock City",
@@ -21,6 +11,7 @@ const projects = [
 		isLive: false,
 		isDeveloping: true,
 		isCompleted: false,
+		isDeprecated: false,
 	},
 
 	{
@@ -31,7 +22,8 @@ const projects = [
 		ProjectLink: "https://arunraiportfolio.com",
 		isLive: true,
 		isDeveloping: false,
-		isCompleted: false,		
+		isCompleted: false,	
+		isDeprecated: false,	
 	},
 
 	{
@@ -42,7 +34,8 @@ const projects = [
 		ProjectLink: "https://google.com",
 		isLive: false,
 		isDeveloping: false,
-		isCompleted: true,		
+		isCompleted: true,	
+		isDeprecated: false,	
 	},
 
 	{
@@ -53,7 +46,8 @@ const projects = [
 		ProjectLink: "https://google.com",
 		isLive: false,
 		isDeveloping: false,
-		isCompleted: true,		
+		isCompleted: true,	
+		isDeprecated: false,	
 	},
 	{
 		title: "Stock Market Prediction Model",
@@ -63,7 +57,8 @@ const projects = [
 		ProjectLink: "https://google.com",
 		isLive: false,
 		isDeveloping: false,
-		isCompleted: true,		
+		isCompleted: true,	
+		isDeprecated: false,	
 	},
 
 	{
@@ -74,7 +69,8 @@ const projects = [
 		ProjectLink: "https://google.com",
 		isLive: false,
 		isDeveloping: false,
-		isCompleted: true,		
+		isCompleted: true,	
+		isDeprecated: false,	
 	},
 	{
 		title: "Appointment Manager",
@@ -84,9 +80,20 @@ const projects = [
 		ProjectLink: "https://google.com",
 		isLive: false,
 		isDeveloping: false,
-		isCompleted: true,		
+		isCompleted: true,
+		isDeprecated: false,		
 	},
-
+	{
+		title: "Global Capitals",
+		stack: "Java | Springboot | Mondodb | React | Tailwind CSS",
+		description: "A dynamic website for testing geographical knowledge wit tests on states and countries. Features include time tracking, user accounts for progress tracking, and a leaderboard for competitive learning.",
+		githubLink: "https://github.com/arunrai3/USACapitalQuiz",
+		ProjectLink: "https://google.com",
+		isLive: false,
+		isDeveloping: false,
+		isCompleted: false,	
+		isDeprecated: true,	
+	},
 ];
 
 const Project: React.FC = () => {
@@ -107,6 +114,7 @@ const Project: React.FC = () => {
 						isLive={project.isLive}
 						isDeveloping={project.isDeveloping}
 						isCompleted={project.isCompleted}
+						isDeprecated={project.isDeprecated}
 					/>
 				))}
 			</div>
@@ -123,7 +131,8 @@ const ProjectCard: React.FC<{
 	isLive: boolean;
 	isDeveloping: boolean;
 	isCompleted: boolean;
-}> = ({ title, stack, description, githubLink, ProjectLink, isLive, isDeveloping, isCompleted }) => {
+	isDeprecated: boolean;
+}> = ({ title, stack, description, githubLink, ProjectLink, isLive, isDeveloping, isCompleted, isDeprecated }) => {
 	return (
 		<div className='bg-slate-950 rounded-xl p-4 glow-border relative flex flex-col'>
         {isLive && (
@@ -140,12 +149,21 @@ const ProjectCard: React.FC<{
           </div>
         )}
 
+
 		{isCompleted && (
           <div className='absolute top-0 right-0 flex items-center mr-2 mt-2'>
             <div className='h-4 w-4 bg-green-500 rounded-full mr-2'></div>
             <p className='text-green-500 text-md font-bold uppercase'>Completed (Local)</p>
           </div>
         )}
+
+		{isDeprecated && (
+          <div className='absolute top-0 right-0 flex items-center mr-2 mt-2'>
+            <div className='h-4 w-4 bg-red-500 rounded-full mr-2'></div>
+            <p className='text-red-500 text-md font-bold uppercase'>Deprecated</p>
+          </div>
+        )}
+
 		<br></br>
 		<div className="flex flex-col justify-center h-full">
 		  <h3 className='tracking-wider text-white text-3xl font-bold mb-2'>
@@ -165,6 +183,7 @@ const ProjectCard: React.FC<{
 			  className='tracking-wider bg-blue-700 text-white py-2 px-4 rounded-md transition duration-300 hover:bg-blue-600'>
 			  GitHub
 			</a>
+			
 			{isLive && (
             <a
               href={ProjectLink}
